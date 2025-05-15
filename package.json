@@ -1,0 +1,16 @@
+{
+  "name": "solar-income-simulator",
+  "version": "1.0.0",
+  "description": "Ứng dụng giả lập số tiền thu được từ năng lượng mặt trời",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "dependencies": {
+    "chart.js": "^4.3.0",
+    "lottie-web": "^5.12.2"
+  },
+  "devDependencies": {
+    "electron": "^26.2.0"
+  }
+}

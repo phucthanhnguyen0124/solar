@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Solar Income</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Header Section -->
+    <header class="header">
+      <div class="header-content">
+        <h1>Solar Income</h1>
+        <div id="statistics">
+          <p><strong>Tổng thu nhập đến hiện tại:</strong> <span id="totalIncome">0</span> VNĐ</p>
+          <p><strong>Thu nhập trung bình mỗi giờ:</strong> <span id="averageIncome">0</span> VNĐ</p>
+        </div>
+      </div>
+      
+      <!-- Animation Section -->
+      <div class="animation-container">
+        <!-- Nhà máy animation -->
+        <div id="lottieAnimation" class="animation"></div>
+        
+        <!-- Animation mây và mưa -->
+        <div id="cloudAnimation" class="weather-animation"></div>
+        <div id="rainAnimation" class="weather-animation"></div>
+      </div>
+      
+      <!-- Trạng thái thời tiết -->
+      <p id="weatherStatus" class="weather-status"></p>
+    </header>
+
+    <!-- Chart Section -->
+    <div class="chart-container">
+      <canvas id="incomeChart"></canvas>
+    </div>
+
+  </div>
+
+  <script src="renderer.js"></script>
+</body>
+</html>
